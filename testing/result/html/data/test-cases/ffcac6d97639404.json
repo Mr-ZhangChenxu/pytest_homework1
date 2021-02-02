@@ -1,0 +1,143 @@
+{
+  "uid" : "ffcac6d97639404",
+  "name" : "test_add[failed]",
+  "fullName" : "test_calc_new.TestCalc#test_add",
+  "historyId" : "bd1b73714c73b5cf8cce7c0c5e2b50cd",
+  "time" : {
+    "start" : 1612272394516,
+    "stop" : 1612272394516,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert -0.1 == 0.3\n  +-0.1\n  -0.3",
+  "statusTrace" : "self = <testing.test_calc_new.TestCalc object at 0x7fb5dfdf4280>, get_calc = <python_code.calc.Calculator object at 0x7fb5dff20340>\nget_add = [0.1, -0.2, 0.3]\n\n    @allure.story('测试加法')\n    @pytest.mark.run(order=1)\n    def test_add(self, get_calc, get_add):\n        # 调用add方法\n        with allure.step('计算两个数的加和'):\n            result = get_calc.add(get_add[0],get_add[1])\n        # 判断如果结果为浮点数，保留两位小数\n        if isinstance(result, float):\n            result = round(result, 2)\n        # 得到结果后，设置断言\n>       assert result == get_add[2]\nE       assert -0.1 == 0.3\nE         +-0.1\nE         -0.3\n\ntest_calc_new.py:53: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_add",
+    "time" : {
+      "start" : 1612272394515,
+      "stop" : 1612272394515,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1612272394507,
+      "stop" : 1612272394507,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert -0.1 == 0.3\n  +-0.1\n  -0.3",
+    "statusTrace" : "self = <testing.test_calc_new.TestCalc object at 0x7fb5dfdf4280>, get_calc = <python_code.calc.Calculator object at 0x7fb5dff20340>\nget_add = [0.1, -0.2, 0.3]\n\n    @allure.story('测试加法')\n    @pytest.mark.run(order=1)\n    def test_add(self, get_calc, get_add):\n        # 调用add方法\n        with allure.step('计算两个数的加和'):\n            result = get_calc.add(get_add[0],get_add[1])\n        # 判断如果结果为浮点数，保留两位小数\n        if isinstance(result, float):\n            result = round(result, 2)\n        # 得到结果后，设置断言\n>       assert result == get_add[2]\nE       assert -0.1 == 0.3\nE         +-0.1\nE         -0.3\n\ntest_calc_new.py:53: AssertionError",
+    "steps" : [ {
+      "name" : "计算两个数的加和",
+      "time" : {
+        "start" : 1612272394516,
+        "stop" : 1612272394516,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "get_calc::0",
+    "time" : {
+      "start" : 1612272394740,
+      "stop" : 1612272394740,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试加法"
+  }, {
+    "name" : "feature",
+    "value" : "测试计算器"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc_new"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "zhangchnxudeMBP.lan"
+  }, {
+    "name" : "thread",
+    "value" : "8501-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc_new"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_add",
+    "value" : "[0.1, -0.2, 0.3]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=1)" ]
+  },
+  "source" : "ffcac6d97639404.json",
+  "parameterValues" : [ "[0.1, -0.2, 0.3]" ]
+}

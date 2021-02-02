@@ -1,0 +1,81 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert -0.1 == 0.3\n  +-0.1\n  -0.3",
+      "children" : [ {
+        "name" : "test_add[failed]",
+        "uid" : "ffcac6d97639404",
+        "parentUid" : "727731a6eb279f270e2d336b647c2847",
+        "status" : "failed",
+        "time" : {
+          "start" : 1612272394516,
+          "stop" : 1612272394516,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[0.1, -0.2, 0.3]" ]
+      } ],
+      "uid" : "727731a6eb279f270e2d336b647c2847"
+    }, {
+      "name" : "AssertionError: assert -2 == 2\n  +-2\n  -2",
+      "children" : [ {
+        "name" : "test_sub[failed]",
+        "uid" : "78bb2c01851a3a2e",
+        "parentUid" : "18933d962fabcb5db5d22c166b3abb58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1612272394589,
+          "stop" : 1612272394590,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1, 3, 2]" ]
+      } ],
+      "uid" : "18933d962fabcb5db5d22c166b3abb58"
+    }, {
+      "name" : "AssertionError: assert 1.0 == 0.1\n  +1.0\n  -0.1",
+      "children" : [ {
+        "name" : "test_mul[failed]",
+        "uid" : "ab12a5ee858f5ee",
+        "parentUid" : "4dc99a6fa05c20d2f5956668ef10d184",
+        "status" : "failed",
+        "time" : {
+          "start" : 1612272394646,
+          "stop" : 1612272394647,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[2, 0.5, 0.1]" ]
+      } ],
+      "uid" : "4dc99a6fa05c20d2f5956668ef10d184"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "ZeroDivisionError: division by zero",
+      "children" : [ {
+        "name" : "test_div[failed]",
+        "uid" : "6ad8814a1f71463e",
+        "parentUid" : "23d45e2b95d72e21c04056363d6f717f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1612272394703,
+          "stop" : 1612272394704,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1, 0, 'X']" ]
+      } ],
+      "uid" : "23d45e2b95d72e21c04056363d6f717f"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

@@ -33,3 +33,41 @@ div:
     - 'failed'
     - 'negative1'
     - 'negative2'
+
+sub:
+  datas:
+    - [3, 1, 2]
+    - [3, 5, -2]
+    - [300, 100, 200]
+    - [0.3, 0.1, 0.2]
+    - [1, 3, 2]
+    - [-1, -3, 2]
+    - [-1, 3, -4]
+  myid:
+    - 'int1'
+    - 'int2'
+    - 'bigint'
+    - 'float'
+    - 'failed'
+    - 'negative1'
+    - 'negative2'
+
+mul:
+  datas:
+    - [1, 2, 2]
+    - [100, 200, 20000]
+    - [0.1, 0.3, 0.03]
+    - [2, 200, 400]
+    - [0.2, 300, 60]
+    - [2, 0.5, 0.1]
+    - [-2, -2, 4]
+    - [-3, 3, -9]
+  myid:
+    - 'int'
+    - 'bigint'
+    - 'float'
+    - 'int_bigint'
+    - 'float_int'
+    - 'failed'
+    - 'negative'
+    - 'negative_int'

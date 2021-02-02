@@ -1,0 +1,145 @@
+{
+  "uid" : "462215d1a694007",
+  "name" : "test_div[failed]",
+  "fullName" : "test_calc_new.TestCalc#test_div",
+  "historyId" : "a02faa4761df5abbb42b6c5d3c1a680b",
+  "time" : {
+    "start" : 1612272394703,
+    "stop" : 1612272394704,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "statusMessage" : "ZeroDivisionError: division by zero",
+  "statusTrace" : "self = <testing.test_calc_new.TestCalc object at 0x7fb5dff92130>, get_calc = <python_code.calc.Calculator object at 0x7fb5dff20340>\nget_div = [1, 0, 'X']\n\n    @allure.story('测试除法')\n    @pytest.mark.run(order=4)\n    def test_div(self, get_calc, get_div):\n        # 调用div方法\n        with allure.step('计算两个数的除商'):\n>           result = get_calc.div(get_div[0], get_div[1])\n\ntest_calc_new.py:60: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <python_code.calc.Calculator object at 0x7fb5dff20340>, a = 1, b = 0\n\n    def div(self, a, b):\n>       return a / b\nE       ZeroDivisionError: division by zero\n\n../python_code/calc.py:19: ZeroDivisionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_div",
+    "time" : {
+      "start" : 1612272394702,
+      "stop" : 1612272394703,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1612272394507,
+      "stop" : 1612272394507,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "ZeroDivisionError: division by zero",
+    "statusTrace" : "self = <testing.test_calc_new.TestCalc object at 0x7fb5dff92130>, get_calc = <python_code.calc.Calculator object at 0x7fb5dff20340>\nget_div = [1, 0, 'X']\n\n    @allure.story('测试除法')\n    @pytest.mark.run(order=4)\n    def test_div(self, get_calc, get_div):\n        # 调用div方法\n        with allure.step('计算两个数的除商'):\n>           result = get_calc.div(get_div[0], get_div[1])\n\ntest_calc_new.py:60: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <python_code.calc.Calculator object at 0x7fb5dff20340>, a = 1, b = 0\n\n    def div(self, a, b):\n>       return a / b\nE       ZeroDivisionError: division by zero\n\n../python_code/calc.py:19: ZeroDivisionError",
+    "steps" : [ {
+      "name" : "计算两个数的除商",
+      "time" : {
+        "start" : 1612272394703,
+        "stop" : 1612272394703,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "ZeroDivisionError: division by zero\n",
+      "statusTrace" : "  File \"/Users/zhangchenxu/PycharmProjects/pytest_homework/testing/test_calc_new.py\", line 60, in test_div\n    result = get_calc.div(get_div[0], get_div[1])\n  File \"/Users/zhangchenxu/PycharmProjects/pytest_homework/python_code/calc.py\", line 19, in div\n    return a / b\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "get_calc::0",
+    "time" : {
+      "start" : 1612272394740,
+      "stop" : 1612272394740,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试除法"
+  }, {
+    "name" : "feature",
+    "value" : "测试计算器"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc_new"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "zhangchnxudeMBP.lan"
+  }, {
+    "name" : "thread",
+    "value" : "8501-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc_new"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_div",
+    "value" : "[1, 0, 'X']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=4)" ]
+  },
+  "source" : "462215d1a694007.json",
+  "parameterValues" : [ "[1, 0, 'X']" ]
+}
